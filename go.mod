@@ -3,6 +3,7 @@ module code.cloudfoundry.org/rep
 go 1.22.3
 
 replace code.cloudfoundry.org/executor => github.com/dimitardimitrov13/executor v0.0.0-20240703065512-e44881b195c6
+replace code.cloudfoundry.org/ecrhelper => github.com/dimitardimitrov13/ecrhelper CFAR-929_VCAP_SERVICES
 
 require (
 	code.cloudfoundry.org/archiver v0.0.0-20240625174243-6d58e629a167
