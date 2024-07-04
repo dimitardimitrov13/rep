@@ -2,18 +2,21 @@ module code.cloudfoundry.org/rep
 
 go 1.22.3
 
-replace code.cloudfoundry.org/executor => github.com/dimitardimitrov13/executor v0.0.0-20240703065512-e44881b195c6
-replace code.cloudfoundry.org/ecrhelper => github.com/dimitardimitrov13/ecrhelper CFAR-929_VCAP_SERVICES
+replace code.cloudfoundry.org/bbs => github.com/dimitardimitrov13/bbs v0.0.0-20240627093200-178c67bee13f
+
+replace code.cloudfoundry.org/executor => ../executor
+
+replace code.cloudfoundry.org/ecrhelper => github.com/dimitardimitrov13/ecrhelper v0.0.0-20240408164227-463ffec0ce9a
 
 require (
 	code.cloudfoundry.org/archiver v0.0.0-20240625174243-6d58e629a167
-	code.cloudfoundry.org/bbs v0.0.0-20240521125508-20d3971ce31b
+	code.cloudfoundry.org/bbs v0.0.0-00010101000000-000000000000
 	code.cloudfoundry.org/cfhttp/v2 v2.1.0
-	code.cloudfoundry.org/clock v1.1.0
+	code.cloudfoundry.org/clock v1.2.0
 	code.cloudfoundry.org/debugserver v0.0.0-20240625174232-b3229b6daea3
-	code.cloudfoundry.org/diego-logging-client v0.0.0-20240702174911-eee1e008b8e0
+	code.cloudfoundry.org/diego-logging-client v0.0.0-20240703175007-4cd6b2daa77c
 	code.cloudfoundry.org/durationjson v0.0.0-20240625174233-9ff5003698bf
-	code.cloudfoundry.org/ecrhelper v0.0.0-20240408164227-463ffec0ce9a
+	code.cloudfoundry.org/ecrhelper v0.0.0-00010101000000-000000000000
 	code.cloudfoundry.org/executor v0.0.0-00010101000000-000000000000
 	code.cloudfoundry.org/garden v0.0.0-20240625195848-36e99aad95da
 	code.cloudfoundry.org/go-loggregator/v9 v9.2.1
@@ -44,7 +47,7 @@ require (
 	code.cloudfoundry.org/volman v0.0.0-20240521125855-6a9a624f6807 // indirect
 	code.cloudfoundry.org/workpool v0.0.0-20240408164905-b6c2fa5a80e4 // indirect
 	filippo.io/edwards25519 v1.1.0 // indirect
-	github.com/aws/aws-sdk-go v1.54.13 // indirect
+	github.com/aws/aws-sdk-go v1.54.14 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.30.0 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.27.22 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.22 // indirect
