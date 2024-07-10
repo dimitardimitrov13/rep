@@ -66,9 +66,6 @@ func main() {
 		panic(err.Error())
 	}
 
-	// FixMe
-	repConfig.ExecutorConfig.ServiceBindingRoot = "/var/vcap/data/rep/shared/garden/service_binding_root"
-
 	if *zoneOverride != "" {
 		repConfig.Zone = *zoneOverride
 	}
